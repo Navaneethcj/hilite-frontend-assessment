@@ -197,8 +197,8 @@ Displays visitor trends and status distribution through charts.
 ### Clone Repository
 
 ```bash
-git clone <repository-url>
-cd visitor-management-system
+git clone https://github.com/Navaneethcj/hilite-frontend-assessment.git
+cd hilite-frontend-assessment
 ```
 
 ### Install Dependencies
@@ -323,20 +323,6 @@ Password: security123
 
 ---
 
-## Screenshots
-
-Include screenshots for:
-
-1. Login Page
-2. Dashboard
-3. Visitor List
-4. Add Visitor Page
-5. Visitor Details Page
-6. Dark Theme
-7. Light Theme
-
----
-
 ## Author
 
 **Navaneeth C J**
@@ -344,7 +330,3 @@ Include screenshots for:
 Frontend Development Assessment Submission
 
 ---
-
-## License
-
-This project was developed solely for technical assessment and evaluation purposes.
