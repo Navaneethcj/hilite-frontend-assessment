@@ -2,13 +2,9 @@
 
 Frontend Development Assessment Submission
 
-## Overview
+## Project Overview
 
-The Visitor Management System is a modern, responsive web application designed to streamline visitor registration, approval, tracking, and monitoring processes within residential communities, apartment complexes, gated societies, and office environments.
-
-The application provides an intuitive dashboard for monitoring visitor activity, managing visitor records, tracking approvals, and analyzing visitor trends through interactive visualizations.
-
----
+The Visitor Management System (VMS) is a modern web application built to streamline visitor registration, tracking, and approval workflows. The system provides administrators and security personnel with a centralized platform to manage visitor information, monitor visitor activities, and visualize visitor statistics through an interactive dashboard.
 
 ## Features
 
@@ -17,49 +13,35 @@ The application provides an intuitive dashboard for monitoring visitor activity,
 * Secure login interface
 * Role-based demo access
 * Protected routes
-* Persistent authentication using Zustand
+* Persistent authentication state
 
 ### Dashboard
 
-* Dynamic greeting based on time of day
-* Hero Banner with responsive design and animation
-* Total Visitors Today
-* Pending Approvals
-* Expected Visitors
-* Approved Visitors Today
-* Visitor Trend Chart
-* Visitor Status Distribution Chart
+* Dynamic greeting
+* Visitor statistics overview
+* Pending approvals tracking
+* Expected visitors monitoring
+* Visitor trend analysis
+* Status distribution visualization
 
 ### Visitor Management
 
-* Add New Visitor
-* View Visitor Details
-* Search Visitors
-* Filter Visitors
-* Status Management
-* Visitor History Tracking
-
-### Form Validation
-
-* React Hook Form integration
-* Zod schema validation
-* Phone number validation
-* Required field validation
-* User-friendly validation messages
+* Add new visitors
+* View visitor details
+* Search visitors
+* Filter visitor records
+* Status tracking (Pending, Approved, Rejected)
 
 ### User Experience
 
 * Responsive design
 * Dark and Light theme support
 * Interactive charts
-* Clean and modern UI
-* Mobile-friendly layouts
-
----
+* Modern dashboard interface
 
 ## Technology Stack
 
-### Frontend Framework
+### Frontend
 
 * React 19
 * TypeScript
@@ -73,14 +55,14 @@ The application provides an intuitive dashboard for monitoring visitor activity,
 
 * Zustand
 
-### Routing
-
-* React Router DOM
-
 ### Forms & Validation
 
 * React Hook Form
 * Zod
+
+### Routing
+
+* React Router DOM
 
 ### Data Visualization
 
@@ -90,107 +72,22 @@ The application provides an intuitive dashboard for monitoring visitor activity,
 
 * Local Storage
 
-### Development Tools
-
-* ESLint
-* TypeScript Compiler
-
----
-
 ## Project Structure
 
 ```text
-src
-│
-├── components
-│   ├── common
-│   │   ├── EmptyState
-│   │   ├── ErrorAlert
-│   │   ├── LoadingOverlay
-│   │   ├── PageHeader
-│   │   └── StatusChip
-│   │
-│   ├── dashboard
-│   │   ├── HeroBanner
-│   │   ├── StatCard
-│   │   ├── VisitorChart
-│   │   └── StatusPieChart
-│   │
-│   └── visitors
-│       ├── VisitorFiltersBar
-│       └── VisitorTable
-│
-├── layouts
-│   ├── AppShell
-│   ├── Sidebar
-│   └── TopBar
-│
-├── pages
-│   ├── LoginPage
-│   ├── DashboardPage
-│   ├── VisitorListPage
-│   ├── VisitorDetailPage
-│   └── AddVisitorPage
-│
-├── services
-│   └── visitors.service.ts
-│
-├── store
-│   ├── auth.store.ts
-│   ├── theme.store.ts
-│   └── visitor.store.ts
-│
-├── schemas
-│   └── visitor.schema.ts
-│
-├── constants
-├── routes
-├── hooks
-├── types
-└── utils
+src/
+├── components/
+├── pages/
+├── layouts/
+├── store/
+├── services/
+├── schemas/
+├── routes/
+├── constants/
+├── hooks/
+├── types/
+└── utils/
 ```
-
----
-
-## Application Architecture
-
-```text
-Presentation Layer (Pages)
-            │
-            ▼
-Reusable Components
-            │
-            ▼
-State Management (Zustand)
-            │
-            ▼
-Service Layer
-            │
-            ▼
-Local Storage Persistence
-```
-
----
-
-## Key Functional Modules
-
-### Authentication Module
-
-Handles user login, session persistence, and route protection.
-
-### Dashboard Module
-
-Provides analytical insights and visual representation of visitor data.
-
-### Visitor Management Module
-
-Supports visitor creation, viewing, searching, filtering, and status tracking.
-
-### Reporting & Visualization Module
-
-Displays visitor trends and status distribution through charts.
-
----
 
 ## Installation
 
@@ -219,15 +116,11 @@ Application will start at:
 http://localhost:5173
 ```
 
----
-
 ## Production Build
 
 ```bash
 npm run build
 ```
-
----
 
 ## Preview Production Build
 
@@ -235,98 +128,20 @@ npm run build
 npm run preview
 ```
 
----
-
 ## Demo Credentials
 
 ### Administrator
 
-```text
-Email: admin@vms.com
+Email: [admin@vms.com]
 Password: admin123
-```
 
 ### Security Personnel
 
-```text
-Email: security@vms.com
+Email: [security@vms.com]
 Password: security123
-```
-
----
-
-## Validation Rules
-
-### Visitor Name
-
-* Required
-
-### Phone Number
-
-* 10 digits only
-* Numeric characters only
-* Automatically prefixed with +91
-
-### Host Name
-
-* Required
-
-### Visit Date
-
-* Required
-
-### Purpose
-
-* Required
-
-### Status
-
-* Pending
-* Approved
-* Rejected
-
----
-
-## Design Decisions
-
-* React with TypeScript for scalability and maintainability.
-* Zustand selected for lightweight and efficient state management.
-* Material UI used to ensure consistent design language and accessibility.
-* React Hook Form and Zod chosen for robust form validation.
-* Local Storage used to simulate persistence without requiring backend infrastructure.
-* Component-based architecture adopted to maximize reusability and maintainability.
-
----
-
-## Challenges Faced
-
-* Implementing responsive layouts across multiple screen sizes.
-* Designing a reusable dashboard architecture.
-* Managing visitor state efficiently using Zustand.
-* Implementing robust form validation and user feedback.
-* Ensuring consistent theming across all components.
-* Integrating responsive hero banner animations without impacting performance.
-
----
-
-## Future Enhancements
-
-* Backend API integration
-* Role-Based Access Control (RBAC)
-* QR Code based visitor passes
-* Real-time notifications
-* Email and SMS alerts
-* Visitor check-in/check-out workflow
-* Export reports to PDF and Excel
-* Audit logging
-* Advanced analytics dashboard
-
----
 
 ## Author
 
-**Navaneeth C J**
+Navaneeth C J
 
 Frontend Development Assessment Submission
-
----
