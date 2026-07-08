@@ -21,7 +21,7 @@ export interface VisitorFormData {
   purpose: string;
   visit_date: string;
   status: VisitorStatus;
-  host_name?: string;
+  host_name: string;
   notes?: string;
 }
 
