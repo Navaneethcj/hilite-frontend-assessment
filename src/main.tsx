@@ -1,17 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import { initMixpanel } from "./analytics/mixpanel";
 // Dev-only: seed sample visitors on first load
 import { seedVisitorsIfEmpty } from './utils/seed';
 
 // Global styles
 import './index.css';
 
+initMixpanel();
+
 // Roboto font (required by MUI)
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+
+
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
